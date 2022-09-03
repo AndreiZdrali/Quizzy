@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bkOyHD6S+jS2nTkm5Fm+kY97q0cvCdRAdPVbWJTs24g=",
+  "Source": "QuizzyWebAPI",
+  "BasePath": "_content/QuizzyWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
