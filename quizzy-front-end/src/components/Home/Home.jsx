@@ -1,14 +1,19 @@
 import './Home.css';
 import { Routes, Route } from 'react-router-dom';
+import AuthService from '../../services/auth.service';
 import QuizList from '../QuizList/QuizList';
 import Quiz from '../Quiz/Quiz';
 
 function Home() {
 
+  const test = () => {
+    AuthService.register("david", "parola");
+  }
+
   return (
     <div className="home-container">
       <div className="text-content">
-        <div className="home-title">
+        <div className="home-title" onClick={test}>
           Quizzy
         </div>
         <div className="home-description">
