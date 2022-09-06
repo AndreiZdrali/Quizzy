@@ -2,11 +2,13 @@
 using Microsoft.AspNetCore.Mvc;
 using QuizzyWebAPI.Services;
 using QuizzyWebAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace QuizzyWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Member")]
     public class QuestionController : ControllerBase
     {
         public QuestionController()
@@ -20,7 +22,7 @@ namespace QuizzyWebAPI.Controllers
             return Ok(QuestionService.GetAll());
         }
 
-        [HttpGet("quiz")]
+        [HttpGet("quiz"), AllowAnonymous]
         public IActionResult GetAllQuizzes()
         {
             return Ok(QuestionService.GetAllQuizzes());

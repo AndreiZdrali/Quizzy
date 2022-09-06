@@ -11,11 +11,11 @@ function CategoryCard(props) {
   return (
     <div className="card-container" onClick={onClick}>
       <div className="card-title">
-        {props.title ?? "MISSING VALUE"}
+        {props.title}
       </div>
       <hr className="card-line"/>
       <div className="card-description">
-        {props.description ?? "MISSING VALUE"}
+        {props.description}
       </div>
     </div>
   )
